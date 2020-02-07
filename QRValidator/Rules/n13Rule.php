@@ -4,7 +4,7 @@ require_once ('AbstractRule.php');
 
 class n13Rule extends AbstractRule
 {
-    public function validateRule($qrCode, $message=null)
+    public function validateRule($barcode, $message=null)
     {
         unset($_SESSION['validationErrors']);
         $s = 0;
@@ -15,13 +15,13 @@ class n13Rule extends AbstractRule
             } else {
                 $pos = 3;
             }
-            $s = $s + $pos * $qrCode[$i];
+            $s = $s + $pos * $barcode[$i];
         }
-        $check = substr($qrCode, -1) ;
+        $check = substr($barcode, -1) ;
 
         if (! ($check == (10 - ($s % 10))%10)) {
 
-            $_SESSION['validationErrors'] = $message;
+            $_SESSION['validationErrors'] = 'The ' . $barcode . ' is not valid';
         }
         return true;
     }

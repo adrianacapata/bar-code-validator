@@ -1,5 +1,5 @@
 <?php
 abstract class AbstractRule
 {
-    public function validateRule($qrCode, $message=null) {}
+    public function validateRule($barcode, $message=null) {}
 }
