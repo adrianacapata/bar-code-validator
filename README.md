@@ -3,7 +3,7 @@
 There are two Barcode validation standards: N10 and N13. Here are some valid examples of each:
 
     * N10:
-        * 0 4 7 1 9 5 8 6 9 7
+        * 0471958697
         * 067443000X
         * 0 471 60695 2
         * 0-470-84525-2
