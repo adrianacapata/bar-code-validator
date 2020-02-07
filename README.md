@@ -1,4 +1,4 @@
-# bar-code-validator
+# php bar-code-validator
 
 There are two Barcode validation standards: N10 and N13. Here are some valid examples of each:
 
