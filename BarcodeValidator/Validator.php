@@ -8,9 +8,9 @@ class Validator
         $codeToCheck = $this->noHyphens($barcode);
         $codeToCheck = $this->noSpaces($codeToCheck);
 
-        $qrLength = strlen($codeToCheck);
+        $barcodeLength = strlen($codeToCheck);
         $rulesFactory = new RulesFactory();
-        $rulesFactory::selectRule($codeToCheck, $qrLength);
+        $rulesFactory::selectRule($codeToCheck, $barcodeLength);
 
         return $barcode;
     }
