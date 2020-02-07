@@ -1,5 +1,5 @@
 <?php
-require_once ('./QRValidator/RulesFactory.php');
+require_once('./BarcodeValidator/RulesFactory.php');
 
 class Validator
 {

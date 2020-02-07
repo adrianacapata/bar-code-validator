@@ -1,5 +1,5 @@
 <?php
-require_once ('./QRValidator/Validator.php');
+require_once('./BarcodeValidator/Validator.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $validator = new Validator();
